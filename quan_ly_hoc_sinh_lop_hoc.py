@@ -4,12 +4,10 @@ danh_sach_hoc_sinh = []
 def them_lop():
     ma_lop = input("Nhập mã lớp: ")
     ten_lop = input("Nhập tên lớp: ")
-
     lop = {
         "ma_lop": ma_lop,
         "ten_lop": ten_lop
     }
-
     danh_sach_lop.append(lop)
     print("Thêm lớp thành công!")
 
@@ -20,20 +18,18 @@ def them_hoc_sinh():
     ma_hs = input("Nhập mã học sinh: ")
     ten_hs = input("Nhập tên học sinh: ")
     ma_lop = input("Nhập mã lớp: ")
-
     hoc_sinh = {
         "ma_hs": ma_hs,
         "ten_hs": ten_hs,
         "ma_lop": ma_lop
     }
-
     danh_sach_hoc_sinh.append(hoc_sinh)
     print("Thêm học sinh thành công!")
 
 def hien_thi_hoc_sinh():
     for hs in danh_sach_hoc_sinh:
         print(hs)
-        
+
 def tim_hoc_sinh():
     ma = input("Nhập mã học sinh cần tìm: ")
 
